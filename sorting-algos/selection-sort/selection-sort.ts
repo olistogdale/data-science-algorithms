@@ -12,17 +12,19 @@ function selectionSort(arr: number[]): number[] {
   if (arr.length <= 1) return arr;
 
   for (let i = 0; i < arr.length - 1; i++) {
-    let index = i;
+    let minIndex = i;
 
     for (let j = i + 1; j < arr.length; j++) {
-      if (arr[j] < arr[index]) {
-        index = j;
+      if (arr[j] < arr[minIndex]) {
+        minIndex = j;
       }
     }
 
-    const temp = arr[index];
-    arr[index] = arr[i];
-    arr[i] = temp;
+    if (minIndex !== i) {
+      const temp = arr[minIndex];
+      arr[minIndex] = arr[i];
+      arr[i] = temp;
+    }
   }
 
   return arr;
