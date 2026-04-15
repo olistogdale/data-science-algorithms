@@ -31,3 +31,4 @@ function bubbleSort(arr: number[]): number[] {
 console.log(bubbleSort(arrays.one));
 console.log(bubbleSort(arrays.two));
 console.log(bubbleSort(arrays.three));
+console.log(bubbleSort(arrays.four));

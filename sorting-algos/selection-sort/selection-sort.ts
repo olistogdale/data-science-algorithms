@@ -31,3 +31,4 @@ function selectionSort(arr: number[]): number[] {
 console.log(selectionSort(arrays.one));
 console.log(selectionSort(arrays.two));
 console.log(selectionSort(arrays.three));
+console.log(selectionSort(arrays.four));
