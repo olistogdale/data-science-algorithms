@@ -1,3 +1,11 @@
+/*
+* Problem: Bubble Sort
+* Approach: Nested for... loops
+* Best-case Time: O(n) (in the case of using 'swapped' trigger, otherwise O(n^2))
+* Worst-case Time: O(n^2)
+* Space: O(1) 
+*/
+
 import { arrays } from '../arrays';
 
 function bubbleSort(arr: number[]): number[] {

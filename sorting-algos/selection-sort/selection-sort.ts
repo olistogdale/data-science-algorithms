@@ -1,3 +1,11 @@
+/*
+* Problem: Selection Sort
+* Approach: Nested for... loops
+* Best-case Time: O(n^2)
+* Worst-case Time: O(n^2)
+* Space: O(1) 
+*/
+
 import { arrays } from "../arrays";
 
 function selectionSort(arr: number[]): number[] {
