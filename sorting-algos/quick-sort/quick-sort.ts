@@ -46,14 +46,9 @@ function partition(arr: number[], low: number, high: number): number {
   return i + 1
 }
 
-const arrayOne = [...arrays.one];
-const arrayTwo = [...arrays.two];
-const arrayThree = [...arrays.three];
-const arrayFour = [...arrays.four];
+quickSort(arrays.one);
+quickSort(arrays.two);
+quickSort(arrays.three);
+quickSort(arrays.four);
 
-quickSort(arrayOne);
-quickSort(arrayTwo);
-quickSort(arrayThree);
-quickSort(arrayFour);
-
-console.log(arrayOne, arrayTwo, arrayThree, arrayFour);
+console.log(arrays.one, arrays.two, arrays.three, arrays.four);
