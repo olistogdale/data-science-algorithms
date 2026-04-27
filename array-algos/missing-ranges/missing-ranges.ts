@@ -7,6 +7,12 @@
 * Space: O(1) 
 */
 
+const array31: number[] = [2,4,17,35,80];
+const array32: number[] = [-27,-8,0,1,2];
+const array33: number[] = [0,1,1,2,4,32];
+const array34: number[] = [12,12,12,122];
+const array35: number[] = [];
+
 function findMissingRanges(nums: number[], lower: number, upper: number): number[][] {
   let outputArr: number[][] = [];
 
@@ -21,3 +27,9 @@ function findMissingRanges(nums: number[], lower: number, upper: number): number
 
   return outputArr;
 };
+
+console.log(findMissingRanges(array31, 0, 100));
+console.log(findMissingRanges(array32, -100, 100));
+console.log(findMissingRanges(array33, 0, 100));
+console.log(findMissingRanges(array34, 0, 200));
+console.log(findMissingRanges(array35, -100, 100));
