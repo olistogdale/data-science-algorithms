@@ -15,14 +15,16 @@ const array35: number[] = [];
 
 function findMissingRanges(nums: number[], lower: number, upper: number): number[][] {
   let outputArr: number[][] = [];
+  let previous = lower - 1;
 
-  nums.push(upper + 1);
-  nums.unshift(lower - 1);
-
-  for (let i = 0; i < nums.length; i++) {
-    if (nums[i + 1] - nums[i] > 1) {
-      outputArr.push([nums[i] + 1, nums[i + 1] - 1]);
+  for (let i = 0; i <= nums.length; i++) {
+    const current = i < nums.length? nums[i] : upper + 1;
+    
+    if (current - previous > 1) {
+      outputArr.push([previous + 1, current - 1]);
     }
+
+    previous = current;
   }
 
   return outputArr;
