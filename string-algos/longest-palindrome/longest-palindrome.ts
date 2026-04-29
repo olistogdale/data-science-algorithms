@@ -1,4 +1,11 @@
-
+/*
+* Problem: Longest Palindrome
+* Description: Find the longest possible palindrome that can be constructed using letters available in the input string, returning its length.
+* Approach: Map or Set
+* Best-case Time: O(n)
+* Worst-case Time: O(n)
+* Space: O(1)
+*/
 
 
 function longestPalindromeMap(str: string): number {
@@ -29,7 +36,7 @@ console.log(longestPalindromeMap('ccc'));
 console.log(longestPalindromeMap('a'));
 
 function longestPalindromeSet(str: string): number {
-  const set = new Set();
+  const set = new Set<string>();
   let palindromeCount = 0;
 
   for (let i = 0; i < str.length; i++) {
