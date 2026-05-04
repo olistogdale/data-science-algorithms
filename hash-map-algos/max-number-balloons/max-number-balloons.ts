@@ -28,3 +28,4 @@ function maxNumberOfBalloons(text: string): number {
 
 console.log(maxNumberOfBalloons('bartlrlnfsoso'));
 console.log(maxNumberOfBalloons('ball'));
+console.log(maxNumberOfBalloons(''));
