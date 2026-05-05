@@ -2,9 +2,9 @@
 * Problem: Ransom Note
 * Description: Determine whether a 'ransome note' string can be created from the available characters in a 'magazine' string, returning true if so and false otherwise.
 * Approach: Hash map
-* Best-case Time: O()
-* Worst-case Time: O()
-* Space: O()
+* Best-case Time: O(n)
+* Worst-case Time: O(n)
+* Space: O(1)
 */
 
 function ransomNote(ransomNote: string, magazine: string): boolean {
